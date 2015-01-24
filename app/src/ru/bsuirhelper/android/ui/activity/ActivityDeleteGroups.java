@@ -1,4 +1,4 @@
-package ru.bsuirhelper.android.ui.schedule;
+package ru.bsuirhelper.android.ui.activity;
 
 import android.os.Bundle;
 import android.support.v7.app.ActionBarActivity;
@@ -10,8 +10,9 @@ import android.widget.ListView;
 import com.google.analytics.tracking.android.EasyTracker;
 import ru.bsuirhelper.android.ApplicationSettings;
 import ru.bsuirhelper.android.R;
-import ru.bsuirhelper.android.core.schedule.ScheduleManager;
-import ru.bsuirhelper.android.core.schedule.StudentGroup;
+import ru.bsuirhelper.android.core.database.ScheduleManager;
+import ru.bsuirhelper.android.core.models.StudentGroup;
+import ru.bsuirhelper.android.ui.adapter.GroupsViewAdapter;
 
 import java.util.ArrayList;
 

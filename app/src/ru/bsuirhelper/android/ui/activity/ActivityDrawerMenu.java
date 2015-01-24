@@ -1,4 +1,4 @@
-package ru.bsuirhelper.android.ui;
+package ru.bsuirhelper.android.ui.activity;
 
 import android.content.Context;
 import android.content.Intent;
@@ -21,9 +21,8 @@ import android.widget.*;
 import com.google.analytics.tracking.android.EasyTracker;
 import ru.bsuirhelper.android.ApplicationSettings;
 import ru.bsuirhelper.android.R;
-import ru.bsuirhelper.android.ui.notes.FragmentNotes;
-import ru.bsuirhelper.android.ui.schedule.FragmentManagerGroups;
-import ru.bsuirhelper.android.ui.schedule.FragmentSchedule;
+import ru.bsuirhelper.android.ui.fragment.FragmentManagerGroups;
+import ru.bsuirhelper.android.ui.fragment.FragmentSchedule;
 
 /**
  * Created by Влад on 29.10.13.

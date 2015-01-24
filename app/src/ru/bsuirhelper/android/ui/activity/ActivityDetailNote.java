@@ -1,4 +1,4 @@
-package ru.bsuirhelper.android.ui.notes;
+package ru.bsuirhelper.android.ui.activity;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -11,8 +11,8 @@ import com.google.analytics.tracking.android.EasyTracker;
 import com.google.analytics.tracking.android.Fields;
 import com.google.analytics.tracking.android.MapBuilder;
 import ru.bsuirhelper.android.R;
-import ru.bsuirhelper.android.core.notes.Note;
-import ru.bsuirhelper.android.core.notes.NoteDatabase;
+import ru.bsuirhelper.android.core.models.Note;
+import ru.bsuirhelper.android.core.database.NoteDatabase;
 
 /**
  * Created by Влад on 02.02.14.

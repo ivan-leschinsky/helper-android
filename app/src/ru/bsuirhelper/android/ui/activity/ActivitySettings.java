@@ -1,4 +1,4 @@
-package ru.bsuirhelper.android.ui;
+package ru.bsuirhelper.android.ui.activity;
 
 import android.os.Build;
 import android.os.Bundle;

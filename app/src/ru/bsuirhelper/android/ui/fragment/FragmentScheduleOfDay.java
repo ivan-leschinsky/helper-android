@@ -1,4 +1,4 @@
-package ru.bsuirhelper.android.ui.schedule;
+package ru.bsuirhelper.android.ui.fragment;
 
 import android.content.Context;
 import android.content.Intent;
@@ -8,19 +8,18 @@ import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.AdapterView;
 import android.widget.ListView;
 import android.widget.TextView;
 import org.joda.time.DateTime;
 import ru.bsuirhelper.android.R;
 import ru.bsuirhelper.android.core.StudentCalendar;
-import ru.bsuirhelper.android.core.notes.Note;
-import ru.bsuirhelper.android.core.notes.NoteDatabase;
-import ru.bsuirhelper.android.core.schedule.Lesson;
-import ru.bsuirhelper.android.core.schedule.ScheduleManager;
-import ru.bsuirhelper.android.ui.ActivityDrawerMenu;
-import ru.bsuirhelper.android.ui.notes.ActivityDetailNote;
-import ru.bsuirhelper.android.ui.notes.ActivityEditNote;
+import ru.bsuirhelper.android.core.models.Note;
+import ru.bsuirhelper.android.core.models.Lesson;
+import ru.bsuirhelper.android.core.database.ScheduleManager;
+import ru.bsuirhelper.android.ui.activity.ActivityDrawerMenu;
+import ru.bsuirhelper.android.ui.activity.ActivityDetailNote;
+import ru.bsuirhelper.android.ui.activity.ActivityEditNote;
+import ru.bsuirhelper.android.ui.adapter.ViewAdapterLessons;
 
 import java.util.Arrays;
 

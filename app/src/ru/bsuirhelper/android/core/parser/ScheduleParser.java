@@ -1,10 +1,12 @@
-package ru.bsuirhelper.android.core.schedule;
+package ru.bsuirhelper.android.core.parser;
 
 import android.util.Log;
-import org.w3c.dom.*;
+
 import org.xmlpull.v1.XmlPullParser;
 import org.xmlpull.v1.XmlPullParserFactory;
-import ru.bsuirhelper.android.ui.ActivityDrawerMenu;
+
+import ru.bsuirhelper.android.core.models.Lesson;
+import ru.bsuirhelper.android.ui.activity.ActivityDrawerMenu;
 
 import java.io.File;
 import java.io.FileReader;

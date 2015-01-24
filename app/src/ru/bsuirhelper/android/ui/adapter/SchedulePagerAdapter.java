@@ -1,4 +1,4 @@
-package ru.bsuirhelper.android.ui.schedule;
+package ru.bsuirhelper.android.ui.adapter;
 
 import android.content.Context;
 import android.os.Bundle;
@@ -8,11 +8,12 @@ import android.support.v4.app.FragmentStatePagerAdapter;
 import org.joda.time.DateTime;
 import ru.bsuirhelper.android.R;
 import ru.bsuirhelper.android.core.StudentCalendar;
+import ru.bsuirhelper.android.ui.fragment.FragmentScheduleOfDay;
 
 /**
  * Created by Влад on 10.10.13.
  */
-class SchedulePagerAdapter extends FragmentStatePagerAdapter {
+public class SchedulePagerAdapter extends FragmentStatePagerAdapter {
     private final StudentCalendar mStudentCalendar;
     private String mGroupId;
     private int mSubgroup;

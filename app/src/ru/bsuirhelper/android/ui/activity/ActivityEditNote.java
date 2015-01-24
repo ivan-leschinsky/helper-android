@@ -1,4 +1,4 @@
-package ru.bsuirhelper.android.ui.notes;
+package ru.bsuirhelper.android.ui.activity;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -15,10 +15,10 @@ import com.google.analytics.tracking.android.Fields;
 import com.google.analytics.tracking.android.MapBuilder;
 import ru.bsuirhelper.android.ApplicationSettings;
 import ru.bsuirhelper.android.R;
-import ru.bsuirhelper.android.core.notes.Note;
-import ru.bsuirhelper.android.core.notes.NoteDatabase;
-import ru.bsuirhelper.android.core.schedule.Lesson;
-import ru.bsuirhelper.android.core.schedule.ScheduleDatabase;
+import ru.bsuirhelper.android.core.models.Note;
+import ru.bsuirhelper.android.core.database.NoteDatabase;
+import ru.bsuirhelper.android.core.models.Lesson;
+import ru.bsuirhelper.android.core.database.ScheduleDatabase;
 
 import java.util.ArrayList;
 import java.util.HashSet;

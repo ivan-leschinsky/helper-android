@@ -1,13 +1,8 @@
-package ru.bsuirhelper.android.ui.schedule;
+package ru.bsuirhelper.android.ui.adapter;
 
 import android.content.Context;
 import android.graphics.Color;
-import android.graphics.PorterDuff;
-import android.graphics.drawable.Drawable;
 import android.graphics.drawable.GradientDrawable;
-import android.graphics.drawable.LayerDrawable;
-import android.graphics.drawable.ShapeDrawable;
-import android.graphics.drawable.shapes.Shape;
 import android.preference.PreferenceManager;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -16,15 +11,15 @@ import android.widget.BaseAdapter;
 import android.widget.ImageView;
 import android.widget.TextView;
 import ru.bsuirhelper.android.R;
-import ru.bsuirhelper.android.core.notes.Note;
-import ru.bsuirhelper.android.core.notes.NoteDatabase;
-import ru.bsuirhelper.android.core.schedule.Lesson;
-import ru.bsuirhelper.android.ui.ActivitySettings;
+import ru.bsuirhelper.android.core.models.Note;
+import ru.bsuirhelper.android.core.database.NoteDatabase;
+import ru.bsuirhelper.android.core.models.Lesson;
+import ru.bsuirhelper.android.ui.activity.ActivitySettings;
 
 /**
  * Created by Влад on 21.09.13.
  */
-class ViewAdapterLessons extends BaseAdapter {
+public class ViewAdapterLessons extends BaseAdapter {
     private final Context mContext;
     private final Lesson[] mValues;
     public static final int TAG_KEY_DAY = 0;

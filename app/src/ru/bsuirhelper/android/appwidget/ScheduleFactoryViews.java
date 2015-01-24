@@ -4,23 +4,18 @@ import android.annotation.TargetApi;
 import android.appwidget.AppWidgetManager;
 import android.content.Context;
 import android.content.Intent;
-import android.graphics.Color;
 import android.os.Build;
 import android.preference.PreferenceManager;
-import android.util.Log;
 import android.view.View;
 import android.widget.RemoteViews;
 import android.widget.RemoteViewsService;
 import org.joda.time.DateTime;
 
-import java.util.Arrays;
-
 import ru.bsuirhelper.android.ApplicationSettings;
 import ru.bsuirhelper.android.R;
-import ru.bsuirhelper.android.core.schedule.Lesson;
-import ru.bsuirhelper.android.core.schedule.ScheduleManager;
-import ru.bsuirhelper.android.ui.ActivityDrawerMenu;
-import ru.bsuirhelper.android.ui.ActivitySettings;
+import ru.bsuirhelper.android.core.models.Lesson;
+import ru.bsuirhelper.android.core.database.ScheduleManager;
+import ru.bsuirhelper.android.ui.activity.ActivitySettings;
 
 /**
  * Created by Влад on 15.10.13.

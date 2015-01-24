@@ -19,9 +19,9 @@ import java.util.Arrays;
 import ru.bsuirhelper.android.ApplicationSettings;
 import ru.bsuirhelper.android.R;
 import ru.bsuirhelper.android.core.StudentCalendar;
-import ru.bsuirhelper.android.core.schedule.Lesson;
-import ru.bsuirhelper.android.core.schedule.ScheduleManager;
-import ru.bsuirhelper.android.ui.ActivityDrawerMenu;
+import ru.bsuirhelper.android.core.models.Lesson;
+import ru.bsuirhelper.android.core.database.ScheduleManager;
+import ru.bsuirhelper.android.ui.activity.ActivityDrawerMenu;
 
 /**
  * Created by Влад on 04.02.14.

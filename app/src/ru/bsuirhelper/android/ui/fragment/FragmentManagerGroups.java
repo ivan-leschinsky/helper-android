@@ -1,4 +1,4 @@
-package ru.bsuirhelper.android.ui.schedule;
+package ru.bsuirhelper.android.ui.fragment;
 
 import android.app.Activity;
 import android.app.AlertDialog;
@@ -20,9 +20,11 @@ import com.google.analytics.tracking.android.MapBuilder;
 import ru.bsuirhelper.android.ApplicationSettings;
 import ru.bsuirhelper.android.R;
 import ru.bsuirhelper.android.appwidget.ScheduleWidgetProviderBase;
-import ru.bsuirhelper.android.core.schedule.ScheduleManager;
-import ru.bsuirhelper.android.core.schedule.StudentGroup;
-import ru.bsuirhelper.android.ui.DownloadScheduleTask;
+import ru.bsuirhelper.android.core.database.ScheduleManager;
+import ru.bsuirhelper.android.core.models.StudentGroup;
+import ru.bsuirhelper.android.core.asynctask.DownloadScheduleTask;
+import ru.bsuirhelper.android.ui.activity.ActivityDeleteGroups;
+import ru.bsuirhelper.android.ui.adapter.GroupsViewAdapter;
 
 import java.util.ArrayList;
 

@@ -1,4 +1,4 @@
-package ru.bsuirhelper.android.ui.schedule;
+package ru.bsuirhelper.android.ui.fragment;
 
 import android.app.Activity;
 import android.app.AlertDialog;
@@ -10,11 +10,9 @@ import android.os.Build;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
-import android.support.v4.app.FragmentStatePagerAdapter;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.ActionBarActivity;
-import android.util.Log;
 import android.view.*;
 import android.widget.DatePicker;
 import android.widget.Toast;
@@ -25,9 +23,9 @@ import org.joda.time.DateTime;
 import ru.bsuirhelper.android.ApplicationSettings;
 import ru.bsuirhelper.android.R;
 import ru.bsuirhelper.android.core.StudentCalendar;
-import ru.bsuirhelper.android.ui.ActivityDrawerMenu;
-import ru.bsuirhelper.android.ui.DownloadScheduleTask;
-import ru.bsuirhelper.android.ui.RotationViewPager;
+import ru.bsuirhelper.android.core.asynctask.DownloadScheduleTask;
+import ru.bsuirhelper.android.ui.adapter.SchedulePagerAdapter;
+import ru.bsuirhelper.android.ui.pager.RotationViewPager;
 
 public class FragmentSchedule extends Fragment implements DownloadScheduleTask.CallBack {
 
@@ -174,7 +172,7 @@ public class FragmentSchedule extends Fragment implements DownloadScheduleTask.C
 
                 return true;
             case R.id.action_selecttoday:
-                DialogDatePicker newFragment = new DialogDatePicker() {
+                FragmentDialogDatePicker newFragment = new FragmentDialogDatePicker() {
                     @Override
                     public void onDateSet(DatePicker datePicker, int year, int month, int day) {
                         mPager.setCurrentItem(mStudentCalendar.getDayOfYear(new DateTime(year, month + 1, day, 1, 1)));

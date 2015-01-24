@@ -1,4 +1,4 @@
-package ru.bsuirhelper.android.core.schedule;
+package ru.bsuirhelper.android.core.models;
 
 /**
  * Created by Влад on 12.10.13.
